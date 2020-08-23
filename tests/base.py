@@ -12,7 +12,7 @@ class ApiServerUnittest(unittest.TestCase):
         cls.api_server_process = multiprocessing.Process(
             target=api_server.app.run
         )
-        cls.api_server_process.start()
+        cls.api_server_process.run()
         time.sleep(0.1)
 
     @classmethod
